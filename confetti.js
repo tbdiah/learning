@@ -10,7 +10,7 @@ function launchConfetti() {
   function frame() {
     context.clearRect(0, 0, width, height);
 const confettiSettings = {
-      particleCount: 1,
+      particleCount: 3,
       angle: Math.random() * 360,
       spread: Math.random() * 90,
       origin: {
