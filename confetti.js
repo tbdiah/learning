@@ -9,7 +9,7 @@ function launchConfetti() {
 
   const confettiSettings = {
     particleCount: 200,
-    spread: 70,
+    spread: 200,
     origin: {
       y: 0.6
     },
