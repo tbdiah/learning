@@ -18,8 +18,7 @@ function launchConfetti() {
     zIndex: 10000
   };
 
-  const confetti = new ConfettiGenerator(confettiSettings);
-  confetti.render();
+  confetti(confettiSettings);
 }
 
 launchConfetti();
