@@ -1,9 +1,7 @@
 // JavaScript Document
 function launchConfetti() {
-  const container = document.getElementById('confetti-container');
-
   const confettiSettings = {
-    target: container,
+    target: 'confetti-canvas',
     max: 200,
     size: 1,
     animate: true,
@@ -19,19 +17,8 @@ function launchConfetti() {
     zIndex: 10000
   };
 
-  const resizeCanvas = () => {
-    const canvas = container.querySelector('canvas');
-    if (canvas) {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-  };
-
-  confetti(confettiSettings);
-  resizeCanvas();
-
-  window.addEventListener('resize', resizeCanvas);
+  const confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
 }
 
 launchConfetti();
-
