@@ -10,11 +10,13 @@ function launchConfetti() {
   function frame() {
     context.clearRect(0, 0, width, height);
 const confettiSettings = {
-  particleCount: 100,
-  spread: 70,
-  origin: {
-    y: 0.6
-  },
+      particleCount: 1,
+      angle: Math.random() * 360,
+      spread: Math.random() * 90,
+      origin: {
+        x: Math.random(),
+        y: Math.random() - 0.2
+      },
       colors: [
         [165, 104, 246],
         [230, 61, 135],
