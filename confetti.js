@@ -1,8 +1,10 @@
 // JavaScript Document
 function launchConfetti() {
   const canvas = document.getElementById('confetti-canvas');
+  const context = canvas.getContext('2d');
+  
   const confettiSettings = {
-    target: canvas,
+    target: context,
     max: 200,
     size: 1,
     animate: true,
