@@ -1,10 +1,9 @@
 // JavaScript Document
 function launchConfetti() {
-  const canvas = document.getElementById('confetti-canvas');
-  const context = canvas.getContext('2d');
-  
+  const container = document.getElementById('confetti-container');
+
   const confettiSettings = {
-    target: context,
+    target: container,
     max: 200,
     size: 1,
     animate: true,
@@ -20,7 +19,19 @@ function launchConfetti() {
     zIndex: 10000
   };
 
+  const resizeCanvas = () => {
+    const canvas = container.querySelector('canvas');
+    if (canvas) {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+  };
+
   confetti(confettiSettings);
+  resizeCanvas();
+
+  window.addEventListener('resize', resizeCanvas);
 }
 
 launchConfetti();
+
