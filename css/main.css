@@ -402,7 +402,7 @@ button {
 .accordion-icon {
   width: 16px;
   height: 16px;
-  background-image: url('accordion-icon.png');
+  background-image: url('/images/accordion-icon.png');
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.3s ease;
