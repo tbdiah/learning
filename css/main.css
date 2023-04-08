@@ -404,18 +404,18 @@ button {
   margin-bottom: 10px;
 }
 
+
 .accordion-icon {
   width: 10px;
   height: 10px;
   border-top: 2px solid black;
   border-right: 2px solid black;
-  transform: rotate(-45deg) scale(1);
-  transform-origin: 0 0;
+  transform: rotate(-45deg);
   transition: transform 0.3s ease;
 }
 
-.active .accordion-icon {
-  transform: rotate(135deg) scale(1);
+.accordion-icon.active {
+  transform: rotate(135deg);
 }
 
 .accordion-content {
