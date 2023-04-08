@@ -422,3 +422,7 @@ button {
   padding: 10px;
   display: none;
 }
+
+.accordion-content.active {
+  display: block;
+}
