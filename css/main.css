@@ -383,3 +383,36 @@ button {
   pointer-events: none;
   z-index: 9999;
 }
+ 
+/*accordian*/
+
+.accordion {
+  border: 1px solid #ddd;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('accordion-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.active {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
