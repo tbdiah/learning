@@ -386,6 +386,7 @@ button {
  
 /*accordian*/
 
+
 .accordion {
   width: 100%;
   padding: 10px;
@@ -401,7 +402,6 @@ button {
   padding: 10px;
   cursor: pointer;
   margin-bottom: 10px;
-  flex-shrink: 0;
 }
 
 .accordion-icon {
