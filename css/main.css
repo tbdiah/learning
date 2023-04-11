@@ -2,11 +2,14 @@
 /* CSS Document*/
 
 /* Color Palette 
-red: #C0504D
-blue:#4F81BD
-green:#9BBB59
-pink:#CC99FF
-orange:#F79646
+dark blue:#0E256A
+aqua green:#008C84 
+dark green: #002F3C 
+lime green:#A7BF39
+dark orange:#D44102
+bright orange: #FAA000
+dark gray: #3E4749
+cool gray: #879499
 */
 
 
@@ -21,9 +24,8 @@ html, body {
 
 body  {
 margin: 0;
-font-family: 'Muli', sans-serif;
+font-family: 'Lexend', sans-serif;
 font-size: 12pt;
-line-height: 140%;
 font-style: normal;
 color: #212721;
 vertical-align: top;
@@ -34,21 +36,39 @@ padding:0px;
 
 #banner {
 	width: 100%;
-	height: 75px;
-	background-color: cadetblue;
+	height: 100px;
+	background-color: #F2FBFC;
+	border-bottom: 1px solid #879499;
 }
 
 #banner img {
-	float: right;
-	height: 55px;
+	float: left;
+	height: 85px;
 	width: auto;
-	margin-top: 10px;
-	margin-right: 20px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+#course-banner {
+	width: 100%;
+	max-height: 400px;
+	background-color: #0E256A;
+	color: #fff;
+}
+#course-banner h1{
+	font-size: 33px;
+	margin-bottom: 0px;
+}
+
+#course-banner h2{
+	font-size: 24px;
+	line-height: 20px;
+	color: #fff;
+	margin-top: 8px;
 }
 
 a {
   color: #4F81BD;
-
   text-decoration: none;
   font-weight: 600;
 }
@@ -68,36 +88,6 @@ ul {
 li {
 	margin-bottom: 10px;
 }
-#red {
-	border: 1px solid #C0504D;
-	border-top: none;
-	color: #222;
-}
-
-#blue {
-	border: 1px solid #4F81BD;
-	border-top: none;
-}
-
-
-#green {
-	border: 1px solid #9BBB59;
-	border-top: none;
-}
-
-
-
-#pink {
-	border: 1px solid #CC99FF;
-	border-top: none;	
-}
-
-
-#orange {
-	border: 1px solid #F79646;
-	border-top: none;	
-}
-
 
 .m_box {
 	border: 1px solid #CCC;
@@ -213,19 +203,6 @@ li {
     padding: 3px;
 }
 
-h1 {
-font-size: 200%;
-font-weight: 700;
-line-height: 120%;
-}
-
-h2 {
-font-size: 150%;
-font-weight: 700;
-color: #1F497D;
-	line-height: 120%;
-	
-}
 #footer {
 	width: 100%;
 	height: 180px;
@@ -235,8 +212,8 @@ color: #1F497D;
 	font-weight: 700;
 }
 
-#content {
-	width: 1200px;
+.content {
+	max-width: 1200px;
 	margin: auto;
 	padding: 20px;
 }
@@ -373,7 +350,6 @@ button {
     border-radius: 8px;
 }
 
-
 #confetti-canvas {
   position: fixed;
   top: 0;
@@ -425,4 +401,92 @@ button {
 
 .accordion-content.active {
   display: block;
+}
+
+/*progress bar*/
+
+
+.progress-container {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0px 11% 0px 0px;
+  padding: 5px 0px;
+  width: 100px;
+  color: #222;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+line-height: 16px;
+}
+
+.radio:checked + .label {
+  color: darkblue;
+}
+
+.progress {
+  margin: 0 auto;
+  margin-left: -3%;
+  width: 100%;
+}
+
+.progress {
+  padding: 4px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.progress-bar {
+  height: 30px;
+  border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+#zero:checked ~ .progress > .progress-bar {
+  width: 20%;
+  background-color: #f21111;
+}
+
+#twenty:checked ~ .progress > .progress-bar {
+  width: 40%;
+  background-color: #f23711;
+}
+
+#forty:checked ~ .progress > .progress-bar {
+  width: 60%;
+  background-color: #f28211;
+}
+
+#sixty:checked ~ .progress > .progress-bar {
+  width: 80%;
+  background-color: #f2cc11;
+}
+
+#eighty:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #cdf211;
 }
