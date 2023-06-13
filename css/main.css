@@ -25,7 +25,8 @@ html, body {
 body  {
 margin: 0;
 font-family: 'Lexend', sans-serif;
-font-size: 12pt;
+font-size: 14px;
+line-height: 18px;
 font-style: normal;
 color: #212721;
 vertical-align: top;
@@ -54,6 +55,9 @@ padding:0px;
 	max-height: 400px;
 	background-color: #0E256A;
 	color: #fff;
+	padding: 20px;
+	font-size: 140%;
+	font-family: 'Lexend', sans-serif;
 }
 #course-banner h1{
 	font-size: 33px;
