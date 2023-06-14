@@ -67,12 +67,17 @@ padding:0px;
 }
 
 p {
-	line-height: 140%;
+	line-height: 150%;
 }
 
 h1 {
 	font-family: 'Lexend', sans-serif;
-	font-size: 140%;
+	font-size: 160%;
+}
+
+h2 {
+	font-family: 'Lexend', sans-serif;
+	font-size: 120%;
 }
 a {
   color: #4F81BD;
@@ -86,6 +91,12 @@ a:hover {
 
 a:visited {
  color: #551A8B;
+}
+
+#breadcrumbs {
+font-size: 10px;
+letter-spacing:2px;
+margin-bottom: 12px;
 }
 
 
@@ -176,8 +187,8 @@ li {
 	padding-bottom: 5px;
 }
 .button, a.button, a.button:visited, a.button:active {
-    background-color: #DCE6F2;
-    border-radius: 3px;
+    background-color: #0E256A;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 100%;
     min-width: 130px;
@@ -188,15 +199,16 @@ li {
     display: inline-block;
 	margin-right: 16px;
     border: 1px solid #ccc;
-    color: darkslategray;
+    color: #fff;
     font-weight: 700;
 	margin-top: 12px;
 }
 
 #clapping-bg {
-	background-image: url("../images/clapping.svg");
-	background-repeat: no-repeat;
-background-size: 100%;
+  background-image: url("../images/clapping.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
 
 #learning {
