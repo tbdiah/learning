@@ -37,33 +37,38 @@ padding:0px;
 #banner {
 	width: 100%;
 	height: 100px;
-	background-color: #F2FBFC;
+	background-color: #F4F5F7;
 	border-bottom: 1px solid #879499;
 }
 
 #banner img {
 	float: left;
-	height: 85px;
+	height: 100px;
 	width: auto;
-	margin-top: 5px;
-	margin-left: 20px;
 }
 
+#languages {
+   display: block;
+  position: relative;
+  margin-right: 20px;
+  font-family: lexend;
+  float: right;
+  margin-top: 60px;
+}
 #course-banner {
 	width: 100%;
-	max-height: 240px;
+	min-height: 100px;
 	background-color: #0E256A;
-	color: #fff;
-	padding: 10px;
 	font-family: 'Lexend', sans-serif;
+	padding: 10px 10px;
 }
 #course-banner h1{
-	font-size: 150%;
+	color: #FFF;
 }
 
 #course-banner h2{
-	font-size: 120%;
-	color: #EEE;
+	font-size: 130%;
+	color: #CCC;
 }
 
 p {
@@ -113,7 +118,7 @@ margin-bottom: 12px;
 .content {
 	max-width: 1200px;
 	margin: auto;
-	padding: 20px;
+	padding: 0px 20px;
 }
 ul {
     list-style: square outside none;
@@ -166,11 +171,12 @@ padding: 10px;
 
 #footer {
 	width: 100%;
-	min-height: 300px;
+	min-height: 250px;
 	background-color: #F2FBFC;
 	color: #333;
 	font-size: 12px;
 	border-top: 1px solid #ccc;
+	padding-top: 50px;
 }
 
 
