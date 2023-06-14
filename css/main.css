@@ -77,7 +77,17 @@ h1 {
 
 h2 {
 	font-family: 'Lexend', sans-serif;
-	font-size: 120%;
+	font-size: 130%;
+}
+
+h3 {
+	font-family: 'Lexend', sans-serif;
+	font-size: 110%;
+}
+
+h4 {
+	font-family: 'Lexend', sans-serif;
+	font-size: 100%;
 }
 a {
   color: #4F81BD;
@@ -142,6 +152,16 @@ li {
     border-radius: 50%;
     border: 1px solid #fff;
     padding: 3px;
+}
+
+.modules {
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.modules img {
+	width: 100%;
+	height: auto;
 }
 
 #footer {
