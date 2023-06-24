@@ -57,7 +57,7 @@ padding:0px;
 }
 #course-banner {
 	width: 100%;
-	min-height: 100px;
+	min-height: 80px;
 	background-color: #FFF;
 	font-family: 'Lexend', sans-serif;
 	padding: 10px 10px;
@@ -69,6 +69,7 @@ padding:0px;
 #course-banner h2{
 	font-size: 130%;
 	color: #666;
+	margin-top: -10px;
 }
 
 p {
@@ -115,6 +116,9 @@ margin-bottom: 12px;
 }
 
 
+#playbook {
+  margin-top: -20px;
+}
 .content {
 	max-width: 1200px;
 	margin: auto;
