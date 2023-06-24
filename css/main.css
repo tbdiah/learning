@@ -58,17 +58,17 @@ padding:0px;
 #course-banner {
 	width: 100%;
 	min-height: 100px;
-	background-color: #0E256A;
+	background-color: #FFF;
 	font-family: 'Lexend', sans-serif;
 	padding: 10px 10px;
 }
 #course-banner h1{
-	color: #FFF;
+	color: #0E256A;;
 }
 
 #course-banner h2{
 	font-size: 130%;
-	color: #CCC;
+	color: #666;
 }
 
 p {
