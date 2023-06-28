@@ -124,6 +124,17 @@ margin-bottom: 12px;
 	margin: auto;
 	padding: 0px 20px;
 }
+
+
+.audio {
+  background: #222;
+  color: #fff;
+  padding: 10px 0px 0px 10px;
+  border-radius: 6px;
+  width: 350px;
+  font-size: 80%;
+}
+
 ul {
     list-style: square outside none;
 }
