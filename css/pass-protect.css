@@ -46,7 +46,7 @@ padding:0px;
             border-radius: 10px;
             margin-left: auto;
             margin-right: auto;
-            background-color: #FFFFFF;
+            background-color: #EEE;
             overflow: hidden;
             text-align: left;
         }
@@ -55,7 +55,7 @@ padding:0px;
         }
  #passArea {
             padding: 20px 30px;
-            background-color: white;
+            background-color: #EEE;
         }
 #passArea > * {
             margin: 5px auto;
@@ -97,11 +97,11 @@ padding:0px;
 			font-weight: 600;
         }
         #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    height: 100%;
         }
         #attribution {
             position: absolute;
