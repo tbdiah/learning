@@ -54,6 +54,17 @@
 	h2 {
 	font-size: 100%;
 }
+  h1 {
+  font-size: 120%;
+  line-height: 26px;
+}
+	
+  #course-banner h2 {
+  font-size: 100%;
+  margin-top: -10px;
+  line-height: 130%;
+}
+	
 }
 
 
@@ -126,4 +137,25 @@
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+
+
+@media only screen and (max-width: 760px) {
+	H1 {
+		font-size: 110%;
+	}	
+	h2 {
+	font-size: 100%;
+}
+  h1 {
+  font-size: 120%;
+  line-height: 26px;
+}
+	
+  #course-banner h2 {
+  font-size: 100%;
+  margin-top: -10px;
+  line-height: 130%;
+}
+	
 }

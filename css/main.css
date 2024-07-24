@@ -145,6 +145,13 @@ li {
 	margin-bottom: 20px;
 }
 
+
+.modules2 {
+width: 10px;
+display: block;
+border-left: 10px solid #291E71;
+}
+
 .modules {
 padding: 8px;
 }
