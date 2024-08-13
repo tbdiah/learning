@@ -1,0 +1,27 @@
+{
+  "version": "3.90.32893.0",
+  "course_id": "6FUpqqD5TxD_course_id",
+  "title": "M 4: Childhood TB Presentation",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Childhood TB Presenation"
+    }
+  ],
+  "slides": [
+    {
+      "id": "67KgzNo5wSw",
+      "title": "Childhood TB Presentation",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 611
+  },
+  "stage": {
+    "width": 960,
+    "height": 540
+  }
+}
