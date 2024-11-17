@@ -58,22 +58,14 @@
   window.vRestoreStateData = params.state
 
   window.isTargetModeEnabled = false
-  window.isTransitioning = false
-  window.isTransitioningTimeout = null
 
   window.vInterfaceObject = {
     isRise: !!params.rise,
     OnSlideStarted: function (id) {
-      if (!isTransitioning) {
-        // ignoring slideStarted messages from player
-        // when transitioning between slides from jumpToContext
-        // slide:change message sent from jumpToContext after
-        // promise resolves
-        sendParentMessage({
-          type: 'slide:change',
-          data: id
-        })
-      }
+      sendParentMessage({
+        type: 'slide:change',
+        data: id
+      })
       sendParentMessage({
         type: 'targetMode:status',
         data: getIsTargetModeAvailable()
@@ -96,13 +88,15 @@
     OnEnterFullscreen: function () {
       sendParentMessage({
         type: 'fullscreen:enter',
-        windowName: window.name
+        windowName: window.name,
+        data: { windowName: window.name }
       })
     },
     OnExitFullscreen: function () {
       sendParentMessage({
         type: 'fullscreen:exit',
-        windowName: window.name
+        windowName: window.name,
+        data: { windowName: window.name }
       })
     },
     OnPlayerClicked: function () {
@@ -176,17 +170,11 @@
 
       return
     }
-
-    player.JumpToLocation(data.path).then(data => {
+    player.JumpToLocation(data.path).then((data) => {
       if (!data || !data?.target) {
         return
       }
 
-      clearTimeout(window.isTransitioningTimeout)
-      window.isTransitioning = true
-      window.isTransitioningTimeout = setTimeout(() => {
-        window.isTransitioning = false
-      }, 2000)
       sendParentMessage({
         type: 'preview:navigate:success',
         data: data.target?.replace(/_player./, '')
@@ -242,6 +230,7 @@
   }
 
   function handleSelectedTargetPath(targetPath) {
+    log('player-interface.js: handleSelectedTargetPath', targetPath)
     sendParentMessage({
       type: 'targetMode:selected',
       data: targetPath

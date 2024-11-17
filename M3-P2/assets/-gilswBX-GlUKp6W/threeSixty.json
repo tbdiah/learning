@@ -1,0 +1,27 @@
+{
+  "version": "3.90.32893.0",
+  "course_id": "6da5s91Y6G0",
+  "title": "data-quality-scenario-table2-con-screened",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6Zz75FtfW4E",
+      "title": "Calculate Percentage",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 611
+  },
+  "stage": {
+    "width": 960,
+    "height": 540
+  }
+}
