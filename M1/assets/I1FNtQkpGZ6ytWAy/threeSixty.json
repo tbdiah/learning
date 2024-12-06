@@ -1,0 +1,47 @@
+{
+  "version": "3.90.32893.0",
+  "course_id": "5cCx967H0ga",
+  "title": "M1-quiz",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "M&E Check Your Knowledge"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6nCFzf5JVQv",
+      "title": "Question 1",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5WBtCoyVPj0",
+      "title": "Question 2",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "5jSFMitr0dn",
+      "title": "Question 3",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6qRzU5sn2Kp",
+      "title": "Question 4",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5ZjCNfgHE5S",
+      "title": "Complete",
+      "scene_index": "1.5"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 740,
+    "height": 611
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}
